@@ -28,12 +28,13 @@ header{
     margin:0 auto;
 }
 .btn{
-    padding:0.8rem 3rem;
+    padding:0.6rem 3rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 900;
     border:2px solid transparent;
     outline:none;
     cursor:pointer;
+    text-decoration: none;
 }
 .btn-primary{
     background-color: #3DCFD3;
