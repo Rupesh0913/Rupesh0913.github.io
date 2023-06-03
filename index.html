@@ -47,14 +47,85 @@
       </div>
     </header>
    
-    <section id="skills">
+    <section id="skills" class="skills-container ">
 
+      <h2 class="skills-heading ">Skills</h2>
+      <div class="skill-bubble-container">
+        <div class="skills-card skill-bubble skill-bubble-1">
+          <img class="skills-card-img" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML5">
+          <p class="skills-card-name">HTML5</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-2">
+          <img class="skills-card-img" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS">
+          <p class="skills-card-name">CSS</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-3">
+          <img class="skills-card-img" src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-hq-png-1.png" alt="JavaScript">
+          <p class="skills-card-name">JAVASCRIPT</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-4">
+          <img class="skills-card-img" src="https://chathamlibrary.librarycalendar.com/sites/default/files/2022-11/java-logo.png" alt="Java">
+          <p class="skills-card-name">JAVA</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-5">
+          <img class="skills-card-img" src="https://pbs.twimg.com/media/Fi-9yizWIAQgmGY.png" alt="JDBC">
+          <p class="skills-card-name">JDBC</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-6">
+          <img class="skills-card-img" src="./images/58480887cef1014c0b5e48ec.png" alt="Hibernate">
+          <p class="skills-card-name">HIBERMNATE</p> 
+        </div>
+        <div class="skills-card skill-bubble skill-bubble-7">
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/1200px-Database-mysql.svg.png" alt="MySQL">
+          <p class="skills-card-name">MYSQL</p> 
+        </div>
+
+      </div>
     </section>
+
     <section id="projects">
 
     </section>
     <section id="contact">
         
     </section>
+    <script>
+      var skillBubbles = document.querySelectorAll('.skill-bubble');
+      var skillBubbleContainer = document.querySelector('.skill-bubble-container');
+  
+      skillBubbles.forEach(function (bubble, index) {
+        var angle = (index / skillBubbles.length) * 2 * Math.PI; // Calculate angle based on bubble index
+        var radius = 250; // Distance from the center of the container
+  
+        // Position the bubbles
+        var bubbleX = radius * Math.cos(angle);
+        var bubbleY = radius * Math.sin(angle);
+        bubble.style.left = bubbleX + 'px';
+        bubble.style.top = bubbleY + 'px';
+  
+        // Add hover effect
+        bubble.addEventListener('mouseenter', function () {
+          skillBubbleContainer.style.animationPlayState = 'paused'; // Pause the rotation
+          bubble.style.transform = 'scale(.8)'; // Increase size of the hovered bubble
+          bubble.style.width  = '150px';
+          bubble.style.height = '150px';
+          skillBubbles.forEach(function (otherBubble) {
+            if (otherBubble !== bubble) {
+              otherBubble.style.transform = 'scale(0.8)'; // Decrease size of the other bubbles
+            }
+          });
+        });
+  
+        bubble.addEventListener('mouseleave', function () {
+          skillBubbleContainer.style.animationPlayState = 'running'; // Resume the rotation
+          bubble.style.transform = 'scale(1)'; // Reset size of the hovered bubble
+          skillBubbles.forEach(function (otherBubble) {
+             otherBubble.style.transform = 'scale(0.8)'; // Reset size of the other bubbles
+             bubble.style.width  = '120px';
+          bubble.style.height = '120px';
+          });
+        });
+      });
+    </script>
   </body>
 </html>
