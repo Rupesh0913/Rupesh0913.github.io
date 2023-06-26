@@ -382,9 +382,8 @@ text.ContributionCalendar-label{
   #stats_imgs {
     width: 35%;
     margin: auto;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     margin-top: 30px;
-    /* font-size: 12px; */
   }
     /* git callender */
