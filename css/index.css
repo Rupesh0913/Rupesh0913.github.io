@@ -352,3 +352,39 @@ transform: translateX(-50%) rotate(308.57deg) translateY(-200px) rotate(-308.57d
     color:green;
   }
   /* Projects */
+
+  /* git callender */
+  .heading {
+    color: rgb(36, 36, 47);
+    text-align: center;
+    margin-top: 70px;
+  }
+  .contrib-number{
+    font-size: 20px;
+    font-weight: bold;
+  }
+ .ContributionCalendar-label{
+  /* color:#161616 !important; */
+  font-weight: bold;
+ }
+ 
+text.ContributionCalendar-label{
+  fill: #161616;
+}
+
+
+  .react-activity-calendar {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+  }
+  #stats_imgs {
+    width: 35%;
+    margin: auto;
+    /* display: flex; */
+    flex-direction: column;
+    margin-top: 30px;
+    /* font-size: 12px; */
+  }
+    /* git callender */

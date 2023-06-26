@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- git calendar -->
+     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+     <link
+       rel="stylesheet"
+       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+     />
     <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
@@ -161,6 +167,34 @@
 
       </div>
     </section>
+
+    <h1 class="heading">Github Stats</h1>
+      <hr
+        style="
+          width: 20%;
+          margin: auto;
+          margin-top: 10px;
+          border:2px solid rgb(61 207 211);
+        "
+      />
+      <div class="react-activity-calendar"></div>
+      <div id="stats_imgs">
+        <img
+          id="github-streak-stats"
+          src="https://streak-stats.demolab.com?user=Rupesh0913&theme=black-ice&date_format=j%20M%5B%20Y%5D"
+        />
+        <img
+          id="github-stats-card"
+          src="https://github-readme-stats.vercel.app/api?username=Rupesh0913&show_icons=true&theme=transparent"
+          alt=""
+        />
+        <img
+          id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rupesh0913&layout=compact&theme=transparent"
+          alt=""
+        />
+      </div>
+
     <section id="contact">
         
     </section>
@@ -201,6 +235,14 @@
           });
         });
       });
+
+      // git calendar
+  GitHubCalendar(".react-activity-calendar", "Rupesh0913", {
+    responsive: true,
+    // global_stats: false,
+    // tooltips: true,
+  });
+
     </script>
   </body>
 </html>
