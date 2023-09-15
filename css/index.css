@@ -49,7 +49,7 @@ header {
 }
 
 .btn-primary {
-  background-color: #3DCFD3;
+  background-color: #3DCFD3 ;
   color: #161616;
 }
 
@@ -82,7 +82,8 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(70px);
+  background-color: #161616;
+  /* backdrop-filter: blur(70px); */
   /* Adjust the blur amount as desired */
 }
 
@@ -152,6 +153,11 @@ header {
 }
 
 /* SKILLS */
+.techTools{
+  text-align: center;
+}
+
+
 .skills-container {
   position: relative;
   display: inline-block;
@@ -583,22 +589,31 @@ text.ContributionCalendar-label {
 
 /* media query */
 @media screen and (max-width:360px) {
+  
+  .Intro h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width:500px){
+  .Intro-img img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 200px 200px 00px 00px;
+  }
   .Intro {
     color: white;
     margin: 0 1rem;
     padding: 3rem 0 7rem 0;
   }
-
   .Intro h1 {
     font-size: 2rem;
     font-weight: 100;
     line-height: 1;
   }
 
-  .Intro-img img {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 200px 200px 00px 00px;
+  .Intro h1 span {
+    font-size: 2.5rem;
   }
 }
 
@@ -607,6 +622,17 @@ text.ContributionCalendar-label {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 96%, 0 100%);
     padding-top: 4rem;
   }
+  
+  .Intro h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  .Intro h1 span {
+    font-size: 3rem;
+  }
+  
 }
 
 /* media query */
@@ -698,7 +724,7 @@ text.ContributionCalendar-label {
   margin-bottom: 20px;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007BFF;
@@ -710,7 +736,7 @@ text.ContributionCalendar-label {
 
 .btn:hover {
   background-color: #0056b3;
-}
+} */
 
 
 
