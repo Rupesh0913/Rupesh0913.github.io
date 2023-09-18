@@ -42,22 +42,22 @@ header {
   padding: 0.6rem 3rem;
   font-size: 1rem;
   font-weight: 900;
-  border: 2px solid transparent;
+  border: 2px solid transparent ;
   outline: none;
   cursor: pointer;
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: #3DCFD3 ;
-  color: #161616;
+  background-color: #3DCFD3 !important;
 }
 
 .btn-primary:hover {
-  background: transparent;
-  border-color: #3DCFD3;
-  transition: all .3s ease;
-  color: white;
+  background: transparent ;
+  border-color: #3DCFD3 ;
+  transition: all .3s ease ;
+  color: white ;
+  background-color: #161616 !important;
 }
 
 #nav-menu a {
@@ -139,16 +139,16 @@ header {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #3DCFD3;
-  border-color: #3DCFD3;
+  background: transparent !important; ;
+  color: #3DCFD3 !important;
+  border-color: #3DCFD3 !important;
   margin-bottom: 4rem;
 }
 
 .btn-secondary:hover {
   cursor: pointer;
-  background: #3DCFD3;
-  color: white;
+  background: #3DCFD3 !important;
+  color: white !important;
   transition: .3s ease;
 }
 
@@ -723,26 +723,6 @@ text.ContributionCalendar-label {
   font-size: 16px;
   margin-bottom: 20px;
 }
-
-/* .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-} */
-
-
-
-
-
-
 
 
 
