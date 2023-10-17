@@ -156,7 +156,7 @@ header {
 .techTools{
   text-align: center;
 }
-.tech-flex{
+.skills-card{
   display:flex;
   flex-direction: column;
   justify-content: center;
