@@ -156,179 +156,15 @@ header {
 .techTools{
   text-align: center;
 }
-
-
-.skills-container {
-  position: relative;
-  display: inline-block;
-  margin-top: 250px;
-  /* perspective: 1000px; */
-  text-align: center;
-  left: 46%;
-}
-
-.skills-heading {
-/*   font-size: 45px;
-  font-weight: bolder;
-  margin-bottom: 20px; */
-  font-size: 30px; /* Reduce font size for smaller screens */
-  font-weight: bolder;
-  margin-bottom: 10px; /* Reduce margin for smaller screens */
-}
-
-.skill-bubble-container {
-  /*  position: absolute;
-    top: 35%; 
-    left:20px;
-    transform: translate(0%, -10%); */
-  display: flex;
+.tech-flex{
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  animation: rotateAnimation 50s infinite linear;
-  margin: 1px;
-  /*  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-content: center;
-    align-content: center;
-    grid-gap: 20px;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    animation: rotation 10s linear infinite; */
 }
-
-.spy_class {
-  z-index: -1;
+.skills-card-name{
+  font-weight:bold;
 }
-
-.skill-bubble {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-
-  background-color: #e1e1e1;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  transform-origin: -110% -300%;
-  transform-style: preserve-3d;
-}
-
-.skill-bubble img {
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  transform-style: preserve-3d;
-  /* Added to maintain image orientation */
-}
-
-.skills-container:hover .skill-bubble {
-  animation-play-state: paused;
-}
-
-.skill-bubble:hover {
-  transform: scale(1.2);
-}
-
-.skill-bubble:not(:hover) {
-  transform: scale(.8);
-}
-
-
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.skill-bubble-container {
-  animation: rotateAnimation 50s infinite linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Bubble positions */
-.skill-bubble-1 {
-  transform: translateX(-50%) rotate(0deg) translateY(-200px) rotate(-0deg);
-}
-
-.skill-bubble-2 {
-  transform: translateX(-50%) rotate(51.43deg) translateY(-200px) rotate(-51.43deg);
-}
-
-.skill-bubble-3 {
-  transform: translateX(-50%) rotate(102.86deg) translateY(-200px) rotate(-102.86deg);
-}
-
-.skill-bubble-4 {
-  transform: translateX(-50%) rotate(154.29deg) translateY(-200px) rotate(-154.29deg);
-}
-
-.skill-bubble-5 {
-  transform: translateX(-50%) rotate(205.71deg) translateY(-200px) rotate(-205.71deg);
-}
-
-.skill-bubble-6 {
-  transform: translateX(-50%) rotate(257.14deg) translateY(-200px) rotate(-257.14deg);
-}
-
-.skill-bubble-7 {
-  transform: translateX(-50%) rotate(308.57deg) translateY(-200px) rotate(-308.57deg);
-}
-
-.skills-card-name {
-  font-size: 14px;
-  font-weight: bold;
-  /* padding-top:5px; */
-}
-
-.skills-card {
-  background-color: #fff;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
-  transition: transform 0.3s, width 0.3s, height 0.3s;
-  cursor: pointer;
-}
-
-.skills-card:hover {
-  transform: scale(1.2);
-  width: 150px;
-  height: 150px;
-}
-
-
-
-/* Add responsive styles here as needed */
-@media screen and (max-width: 768px) {
-  .skills-heading {
-    font-size: 24px; /* Further reduce font size for mobile screens */
-  }
-
-  .skill-bubble {
-    width: 80px; /* Adjust bubble size for mobile screens */
-    height: 80px; /* Adjust bubble size for mobile screens */
-    margin: 5px; /* Adjust margin for mobile screens */
-  }
-
-  /* Adjust font size for mobile screens */
-  .skills-card-name {
-    font-size: 12px;
-  }
-
-  /* .skills-container {
-    margin-top: 10px; */
-  }
-
-
 /* SKILLS */
 
 
@@ -347,7 +183,7 @@ header {
 
 
 #projects {
-  margin-top: 50rem;
+  margin-top: 1rem;
   text-align: center;
   background-image: url("../images/low-poly-grid-haikei.svg");
   color: white;
@@ -596,6 +432,10 @@ text.ContributionCalendar-label {
 }
 
 @media screen and (max-width:500px){
+  #nav-menu a{
+    font-size: 0.9rem;
+  }
+
   .Intro-img img {
     width: 100%;
     margin-top: 1rem;
@@ -618,6 +458,9 @@ text.ContributionCalendar-label {
 }
 
 @media (max-width: 768px) {
+  .My-container{
+    max-width: 100%;
+  }
   .clip_path {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 96%, 0 100%);
     padding-top: 4rem;
@@ -636,21 +479,6 @@ text.ContributionCalendar-label {
 }
 
 /* media query */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -674,20 +502,6 @@ text.ContributionCalendar-label {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-
-/* Front Side Styles */
-/* .flip-card-front {
-  width: 100%;
-  height: 100%;
-  background-color: #f3f3f3; /* Set a background color for the card 
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Hide any potential overflow 
-} */
 
 .card-image {
   max-width: 100%;
@@ -737,9 +551,6 @@ text.ContributionCalendar-label {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .title {
-    font-size: 1.2em;
   }
   .card-image {
     max-height: 150px; /* Adjust the max-height of the image for mobile */
