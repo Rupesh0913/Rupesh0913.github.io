@@ -455,9 +455,13 @@ text.ContributionCalendar-label {
   .Intro h1 span {
     font-size: 2.5rem;
   }
+
 }
 
 @media (max-width: 768px) {
+  #stats_imgs{
+    width: 60%;
+  }
   .My-container{
     max-width: 100%;
   }

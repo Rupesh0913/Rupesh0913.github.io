@@ -1,459 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Punit Juneja</title>
-    <!-- git calendar -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    <!-- iconify -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap"
-      rel="stylesheet"
-    />
-    <!-- stylesheet- nav & style  -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./style/nav.css" />
-  </head>
-  <body>
-    <div id="container">
-      <!-- *************************************************nav bar********************************************************* -->
-      <nav id="nav-menu">
-        <div class="logo">
-          <h4>Punit Juneja</h4>
-        </div>
-        <ul class="nav-links">
-          <li><a class="nav-link home" href="#home">Home</a></li>
-          <li><a class="nav-link about" href="#hdabout">About</a></li>
-          <li><a class="nav-link skills" href="#skills">Skills</a></li>
-          <li><a class="nav-link projects" href="#hdprojects">Projects</a></li>
-          <li>
-            <a class="nav-link contact" href="#hdcontact">Contact</a>
-          </li>
-          <li>
-            <button id="resume-button-1">
-              <a
-                id="resume-link-1"
-                class="nav-link resume"
-                download="Punit-Juneja-Resume"
-                href="./resume/Punit-Juneja-Resume.pdf"
-                target="_blank"
-                >Resume</a
-              >
-            </button>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-      <!-- ************************************************Home section***************************************************** -->
-      <div id="home">
-        <div>
-          <h2>
-            Hi
-            <img
-              src="https://em-content.zobj.net/source/microsoft-teams/337/waving-hand_1f44b.png"
-              alt=""
-            />
-          </h2>
-          <h1 id="home_Name">I'm Punit Juneja</h1>
-          <h1 id="home_Dis">Full Stack Web Developer</h1>
-          <div id="homeResumeBtnDiv">
-            <button id="resume-button-2">
-              <a
-                id="resume-link-2"
-                download="Punit-Juneja-Resume.pdf"
-                href="./resume/Punit-Juneja-Resume.pdf"
-                target="_blank"
-                >Resume</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- ***********************************************About section***************************************************** -->
-      <div id="about" class="about section">
-        <div id="hdabout"></div>
-        <h1 class="heading" id="hdabout">About Me</h1>
-        <hr
-          style="
-            width: 20%;
-            margin: auto;
-            margin-top: 10px;
-            border: 2px solid rgb(89, 226, 197);
-          "
-        />
-        <div id="about_main">
-          <div id="about_inner">
-            <div id="profile_img">
-              <img
-                class="home-img"
-                src="./images/Punit_juneja_img.jpg"
-                alt=""
-              />
-            </div>
-            <div id="user_details">
-              <h2 id="user-detail-name">I'm Punit Juneja,</h2>
-              <p id="user-detail-intro">
-                A Solution-driven web developer with, the ability to learn and
-                collaborate in rapidly changing environments and compositions.
-                Has 1200+ hours of experience in HTML, CSS, JS, and node. Eager
-                to tackle web development challenges to achieve lasting impacts
-                on user experience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ***********************************************Skills section***************************************************** -->
-      <div id="skills">
-        <h1 class="heading">Skills</h1>
-        <hr
-          style="
-            width: 20%;
-            margin: auto;
-            margin-top: 10px;
-            border: 2px solid rgb(89, 226, 197);
-          "
-        />
-        <div id="skills_main">
-          <div id="skill">
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                data-align="centre"
-                icon="vscode-icons:file-type-html"
-              ></iconify-icon>
-              <h3 class="skills-card-name">HTML</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="vscode-icons:file-type-css"
-              ></iconify-icon>
-              <h3 class="skills-card-name">CSS</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="vscode-icons:file-type-js-official"
-              ></iconify-icon>
-              <h3 class="skills-card-name">JavaScript</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="skill-icons:mongodb"
-              ></iconify-icon>
-              <h3 class="skills-card-name">MongoDB</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="skill-icons:nodejs-dark"
-              ></iconify-icon>
-              <h3 class="skills-card-name">NodeJS</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="skill-icons:expressjs-dark"
-              ></iconify-icon>
-              <h3 class="skills-card-name">expressJS</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="devicon:redis"
-              ></iconify-icon>
-              <h3 class="skills-card-name">redis</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="logos:mysql-icon"
-              ></iconify-icon>
-              <h3 class="skills-card-name">MySql</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="vscode-icons:file-type-typescript-official"
-              ></iconify-icon>
-              <h3 class="skills-card-name">TypeScript</h3>
-            </div>
-            <div class="skills-card">
-              <iconify-icon
-                class="skills-card-img"
-                icon="logos:github-octocat"
-              ></iconify-icon>
-              <h3 class="skills-card-name">GitHub</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- <html>
+<head>
+  <meta charset="utf-8">
+  <title>Card Slider</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" type="text/css" href="others.css">
 
-      <!-- **********************************************Project section***************************************************** -->
-      <div id="hdprojects"></div>
-      <h1 class="heading">Projects</h1>
-      <hr
-        style="
-          width: 20%;
-          margin: auto;
-          margin-top: 10px;
-          border: 2px solid rgb(89, 226, 197);
-        "
-      />
-      <div id="projects">
-        <div id="displayprojects">
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/shopbag_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">ShopBag</h2>
-              <p class="project-description">
-                Shopbag is a clone of paytm_mall, which is a product-based
-                website. From which one can shop for the desired product.
-              </p>
-              <p>An individual project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span>Tech stack:</span>
-                HTML, CSS, JavaScript, Node, Mongodb
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/punitjuneja123/damaged-regret-6465"
-                  target="_blank"
-                  ><iconify-icon
-                    class="gitlogo"
-                    icon="lucide:github"
-                  ></iconify-icon
-                ></a>
-                <a
-                  class="project-deployed-link"
-                  href="https://mellow-palmier-225434.netlify.app/"
-                  target="_blank"
-                  ><iconify-icon
-                    class="netlifylogo"
-                    icon="ri:external-link-line"
-                  ></iconify-icon
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/tripvillas_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">Explorecity</h2>
-              <p class="project-description">
-                Explorecity is a Home Rental website. which is a clone of
-                Tripvillas and can browse through thousands of family owned
-                holiday homes and quaint homestays.
-              </p>
-              <p>Group project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span>Tech stack:</span>
-                HTML, CSS, JavaScript
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/rajesh1028/elegant-bed-6010"
-                  target="_blank"
-                  ><iconify-icon
-                    class="gitlogo"
-                    icon="lucide:github"
-                  ></iconify-icon
-                ></a>
-                <a
-                  class="project-deployed-link"
-                  href="https://lustrous-quokka-d5e991.netlify.app/"
-                  target="_blank"
-                  ><iconify-icon
-                    class="netlifylogo"
-                    icon="ri:external-link-line"
-                  ></iconify-icon
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/beautious_screenshot.jpg"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">Beautious</h2>
-              <p class="project-description">
-                Beautious is a clone of sephora.com, which deals in beauty
-                products,makeup and fragrence.
-              </p>
-              <p>An individual project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span>Tech stack:</span>
-                HTML, CSS, JavaScript
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/punitjuneja123/pleasant-lettuce-5002"
-                  target="_blank"
-                  ><iconify-icon
-                    class="gitlogo"
-                    icon="lucide:github"
-                  ></iconify-icon
-                ></a>
-                <a
-                  class="project-deployed-link"
-                  href="https://gorgeous-sunflower-bb9665.netlify.app/"
-                  target="_blank"
-                  ><iconify-icon
-                    class="netlifylogo"
-                    icon="ri:external-link-line"
-                  ></iconify-icon
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="projectimg"
-              src="./images/MyCal_screenshot.png"
-              alt=""
-            />
-            <div class="projectdis">
-              <h2 class="project-title">MyCal</h2>
-              <p class="project-description">
-                MyCal is a tool for scheduling appointments and events.
-              </p>
-              <p>Group project built within a span of 5 days</p>
-              <p class="project-tech-stack">
-                <span>Tech stack:</span>
-                HTML, CSS, JavaScript, BootStrap, NodeJS, expressJS, MongoDB, PassportJS
-              </p>
-              <div class="logodiv">
-                <a
-                  class="project-github-link"
-                  href="https://github.com/jaysukla/organic-pets-4780-"
-                  target="_blank"
-                  ><iconify-icon
-                    class="gitlogo"
-                    icon="lucide:github"
-                  ></iconify-icon>
-                </a>
-                <a
-                  class="project-deployed-link"
-                  href="https://mycal-704.netlify.app"
-                  target="_blank"
-                  ><iconify-icon
-                    class="netlifylogo"
-                    icon="ri:external-link-line"
-                  ></iconify-icon
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- *****************************************Github- calendar section*************************************************** -->
-      <h1 class="heading">Github Stats</h1>
-      <hr
-        style="
-          width: 20%;
-          margin: auto;
-          margin-top: 10px;
-          border: 2px solid rgb(89, 226, 197);
-        "
-      />
-      <div class="react-activity-calendar"></div>
-      <div id="stats_imgs">
-        <img
-          id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=punitjuneja123&theme=transparent"
-        />
-        <img
-          id="github-stats-card"
-          src="https://github-readme-stats.vercel.app/api?username=punitjuneja123&show_icons=true&theme=transparent"
-          alt=""
-        />
-        <img
-          id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=punitjuneja123&layout=compact&theme=transparent"
-          alt=""
-        />
-      </div>
-      <!-- *****************************************Contact section*************************************************** -->
-      <div id="hdcontact"></div>
-      <h1 class="heading">Contact</h1>
-      <hr
-        style="
-          width: 20%;
-          margin: auto;
-          margin-top: 10px;
-          border: 2px solid rgb(89, 226, 197);
-        "
-      />
-      <div id="contact">
-        <div class="contact_card" id="contact-github">
-          <a href="https://github.com/punitjuneja123"
-            ><iconify-icon
-              class="contact_card_img"
-              icon="skill-icons:github-dark"
-            ></iconify-icon
-          ></a>
-          <a href="https://github.com/punitjuneja123">punitjuneja123</a>
-        </div>
-        <div class="contact_card" id="contact-linkedin">
-          <a href="https://www.linkedin.com/in/punit-juneja-a83395187/"
-            ><iconify-icon
-              class="contact_card_img"
-              icon="skill-icons:linkedin"
-            ></iconify-icon
-          ></a>
-          <a href="https://www.linkedin.com/in/punit-juneja-a83395187/"
-            >Punit Juneja</a
-          >
-        </div>
-        <div class="contact_card" id="contact-phone">
-          <a href="https://www.linkedin.com/in/punit-juneja-a83395187/"
-            ><iconify-icon
-              style="color: green"
-              class="contact_card_img"
-              icon="material-symbols:phone-android-rounded"
-            ></iconify-icon
-          ></a>
-          <p>+91-9078154531</p>
-        </div>
-        <div class="contact_card" id="contact-email">
-          <a
-            ><iconify-icon
-              class="contact_card_img"
-              icon="logos:google-gmail"
-            ></iconify-icon
-          ></a>
-          <p>punitjuneja123@gmail.com</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.6.0/github-calendar.css">
+
+
+
+</head>
+<body>
+
+  <div id="github-calendar"></div>
+
+
+  <div class="carousel">
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/lJjuQa3.jpg" alt="Tamilnadu" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Tamilnadu</h4>
+          <p class="card-text">Tamilnadu is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
         </div>
       </div>
     </div>
-  </body>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="./images/UTOPIA.png" alt="Kerala" style="height: 200px;">
+        <div class="card-body">
+          <img src="" alt="">
+                <p class="project-description">UTOPIA, a clone of "anthropologie.com" which is an e-commerce website to
+                  sell women related product like women dresses, Footwears and accessories.</p>
+                <hr>
+                <p class="project-tech-stack">HTML CSS JAVASCRIPT</p>
+                <hr>
+                <a href="https://github.com/Rupesh0913/rabid-moon-4354" target="_blank"
+                  class="project-github-link">GitHub
+                  Repository</a>
+                <a href="https://serene-syrniki-d8caf6.netlify.app/index.html" target="_blank"
+                  class="project-deployed-link">Live Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/HhdQtlH.jpg" alt="Mumbai" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Mumbai</h4>
+          <p class="card-text">Mumbai is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/GClCIEv.jpg" alt="Kolkata" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Kolkata</h4>
+          <p class="card-text">Kolkata is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/5s0HQpn.jpg" alt="Bangalore" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Bangalore</h4>
+          <p class="card-text">Bangalore is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/oVGn2SG.jpg" alt="Ladakh" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Ladakh</h4>
+          <p class="card-text">Ladakh is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/fZZIYvJ.jpg" alt="Pondicherry" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Pondicherry</h4>
+          <p class="card-text">Pondicherry is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/xNMkfAe.jpg" alt="Varanasi" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Varanasi</h4>
+          <p class="card-text">Varanasi is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img-top" src="https://imgur.com/6kH0uhg.jpg" alt="Mysore" style="height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Mysore</h4>
+          <p class="card-text">Mysore is a...</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <button class="nav left" onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
+    <button class="nav right" onclick="nextSlide()"><i class="bi bi-chevron-right"></i></button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="carousel.js"></script>
+  <script>
+   let active = 1;
+    const cardCount = $('.card-container').length;
+    
+    function prevSlide() {
+      active = (active - 1 + cardCount) % cardCount;
+      updateCarousel();
+    }
+    
+    function nextSlide() {
+      active = (active + 1) % cardCount;
+      updateCarousel();
+    }
+    
+    function updateCarousel() {
+      $('.card-container').each(function(i) {
+        const offset = ((active - i) % cardCount) / 3;
+        const direction = Math.sign(active - i);
+        const absOffset = Math.abs(active - i) / 3;
+        const isActive = i === active ? 1 : 0;
+        const opacity = Math.abs(active - i) <= 1 ? 1 : 0;
+        
+        $(this).css({
+          '--offset': offset,
+          '--direction': direction,
+          '--abs-offset': absOffset,
+          '--active': isActive,
+          '--opacity': opacity
+        });
+      });
+    }
+    
+    $(document).ready(function() {
+      updateCarousel();
+    }); 
+  </script>
+  <script>
+    
+  </script>
+  
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.6.0/github-calendar.css">
+    <title>GitHub Calendar Example</title>
+</head>
+<body>
+    <h1>Rupesh0913's GitHub Contributions Calendar</h1>
+    <div id="github-calendar"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.6.0/github-calendar.min.js"></script>
+    <script>
+        new GitHubCalendar("#github-calendar", "Rupesh0913");
+    </script>
+</body>
 </html>
-<script src="index.js"></script>
+
