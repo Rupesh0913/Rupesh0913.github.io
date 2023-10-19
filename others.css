@@ -1,4 +1,4 @@
-body {
+/* body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -91,7 +91,92 @@ body {
 }
 .project-github-link {
   padding: 5px 10px;
-  /* display:block; */
+ 
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: rgb(36, 36, 47);
+  color: white;
+  font-weight: bold;
+}
+
+.project-deployed-link {
+  font-weight: bold;
+  width: 60%;
+  text-decoration: none;
+  margin: 0px auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: rgb(36, 36, 47);
+  color: green;
+} */
+
+body {
+	margin: 0; 
+	padding: 0;
+	background-image: url(./images/low-poly-grid-haikei.svg); 
+}
+h2 {
+	font-family: 'Bebas Neue', cursive;
+	color: #fff;
+	text-align: center;
+	margin: 40px 0 -50px;
+	padding-bottom: 20px;
+	background-image: url(img/border.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.carousel{
+    height: 600px; 
+    perspective: 200px;
+}
+.carousel .carousel-item{
+	width: 640px;
+	height: 400px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.img-area{
+	border-radius: 10px 10px 0 0;
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+}
+.project-1{
+  background-image: url(./images/UTOPIA.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-2{
+  background-image: url(./images/COOLCLOTH.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-3{
+  background: url("https://user-images.githubusercontent.com/63779583/229431627-c0f6ff08-536c-41ed-9fdd-09d2d24455d7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-4{
+  background: url("https://user-images.githubusercontent.com/63779583/235911347-462ace29-829f-45dd-b907-d445f83c2b35.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project-github-link {
+  padding: 5px 10px;
   width: 90%;
   margin: 10px auto;
   border: 1px solid black;
@@ -113,3 +198,28 @@ body {
   background-color: rgb(36, 36, 47);
   color: green;
 }
+
+
+h4 {
+	font-size: 35px;
+	line-height: 1.5;
+	margin: 15px 0;
+	font-family: 'Bebas Neue', cursive;
+}
+.card p{
+	font-size: 17px;
+}
+
+.container {
+  padding: 2px 15px;
+  width:60%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.511);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.btn-container{
+  margin:20px 0px;
+}
+
