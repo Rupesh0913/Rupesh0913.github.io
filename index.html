@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-  <!-- Required meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
 
-  <!-- git calendar -->
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    
+    <!-- prject card scroll -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
  
   <title>Rupesh's Portfolio</title>
 </head>
@@ -59,45 +62,6 @@
       </div>
     </nav>
   </header>
-  <!-- <header>
-    <nav class="navbar navbar-expand-lg navbar-light" id="nav-menu">
-        <div class="container-fluid container">
-            <a class="navbar-brand title" href="#">portfolio</a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active home" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active about" aria-current="page" href="#about"
-                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active skills" aria-current="page" href="#skills"
-                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">SKILL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active projects" aria-current="page" href="#projects"
-                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active contact" aria-current="page" href="#contact"
-                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">CONTACT</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="./Resume/Rupesh_Sinha_Resume.pdf" download="Rupesh_Sinha_Resume"
-                        class="btn btn-primary nav-link resume" id="resume-button-1">Resume</a>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header> -->
 
   <div class="clip_path">
     <div class="custom-container"></div>
@@ -129,7 +93,6 @@
     </section>
   </div>
   </div>
-
 
   <div class="p-container techTools" id="skills">
     <h1>TECH STACK</h1>
@@ -237,10 +200,6 @@
     </div>
   </div>
 
-
-
-
-
   <div class="p-container techTools">
     <h1>TECH TOOLS</h1>
       <hr>
@@ -295,207 +254,52 @@
     </div>
   </div>
 
-
-
   <section id="projects">
-    
     <h2>PROJECTS</h2>
-    <div class="carousel">
-      <div class="carousel-item">
-        <div class="card project-1">
-          <!-- <div class="img-area "></div> -->
-          <div class="container">
-            <h4>Utopia</h4>
-            <p><i>UTOPIA, a clone of "anthropologie.com" which is an e-commerce website to
-              sell women related product like women dresses, Footwears and accessories.</i></p>
-              <hr>
-            <p>HTML CSS JAVASCRIPT</p>
-            <div class="btn-container"> 
-                  <a href="https://github.com/Rupesh0913/rabid-moon-4354" target="_blank"
-                    class="project-github-link">GitHub
-                    Repository</a>
-                  <a href="https://serene-syrniki-d8caf6.netlify.app" target="_blank"
-                    class="project-deployed-link">Live Demo</a>
-            </div>
+    <ul class="cards">
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--fence"></div>
+          <div class="card__content">
+            <div class="card__title">Flex</div>
+            <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+            <button class="btn btn--block card__btn">Button</button>
           </div>
         </div>
-      </div>
-      <div class="carousel-item ">
-        <div class="card project-2">
-          <!-- <div class="img-area " ></div> -->
-          <div class="container">
-            <div>
-            <h4>Cool Cloths</h4>
-            <p><i>This is E-Commerce Web and name is COOL-CLOTH which is clone of koovs.com
-              which sell product like dresses, Footwears and accessories.</i></p>
-              <hr>
-            <p>HTML CSS JAVASCRIPT</p>
-            <div class="btn-container">                
-              <a href="https://github.com/MSaifKhan01/deeply-time-4287" target="_blank"
-                    class="project-github-link">GitHub Repository</a>
-                  <a href="https://bucolic-malasada-a43ddd.netlify.app/" target="_blank"
-                    class="project-deployed-link">Live
-                    Demo</a>
-            </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--river"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Grow</div>
+            <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+            <button class="btn btn--block card__btn">Button</button>
           </div>
         </div>
-        </div>
-      </div>
-      <div class="carousel-item ">
-        <div class="card project-3">
-          <!-- <div class="img-area " ></div> -->
-          <div class="container">
-            <h4><b>YOUR HELPER</b></h4>
-            <p><i>Objective of this system is to maintain and manage detailed information
-              on
-              the crime that happened in an area under a particular police station.</i></p>
-              <hr>
-            <p>JAVA</p>
-            <div class="btn-container"> 
-            <a href="https://github.com/Rupesh0913/deeply-oven-5153" target="_blank"
-                    class="project-github-link">GitHub Repository</a>
-                  <a href="https://drive.google.com/file/d/16_emgxITXID3z8aFFQRd5jg5XE-Gi9-n/view" target="_blank"
-                    class="project-deployed-link">Presentation</a>
-              </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--record"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Shrink</div>
+            <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+            <button class="btn btn--block card__btn">Button</button>
           </div>
         </div>
-      </div>
-  
-      <div class="carousel-item">
-        <div class="card project-4">
-          <!-- <div class="img-area "></div> -->
-          <div class="container">
-            <h4>The Sweet Spot</h4>
-            <p><i>Objective of this system is to maintain and manage detailed information
-              of
-              all the products in the shop and also store the information of Customers</i></p>
-              <hr>
-            <p>JAVA HIBERNATE MYSQL</p>
-            <div class="btn-container"> 
-              <a href="https://github.com/Rupesh0913/teal-fuel-7913" target="_blank"
-              class="project-github-link">GitHub
-              Repository</a>
-            <a href="https://drive.google.com/file/d/1w2JnG8QVZVcJy9O-jqepi5ik9Mj0QFi1/view" target="_blank"
-              class="project-deployed-link">Presentation</a>
-            </div>
+      </li>
+      <li class="cards__item">
+        <div class="card">
+          <div class="card__image card__image--flowers"></div>
+          <div class="card__content">
+            <div class="card__title">Flex Basis</div>
+            <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
+            <button class="btn btn--block card__btn">Button</button>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
+    
 
-
-
-
-
-    <!-- <div class="p-container">
-      <h1>PROJECTS</h1>
-      <hr>
-      <div class="project-card-container">
-
-        <div class="project-card">
-          <p class="title project-title project-title">UTOPIA</p>
-
-
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front project-1"> -->
-                <!-- <img src="./images/UTOPIA.png" alt="Project 1" class="card-image"> -->
-                <!-- <p class="title project-title project-title">UTOPIA</p> -->
-              <!-- </div>
-              <div class="flip-card-back">
-                <img src="" alt="">
-                <p class="project-description">UTOPIA, a clone of "anthropologie.com" which is an e-commerce website to
-                  sell women related product like women dresses, Footwears and accessories.</p>
-                <hr>
-                <p class="project-tech-stack">HTML CSS JAVASCRIPT</p>
-                <hr>
-                <a href="https://github.com/Rupesh0913/rabid-moon-4354" target="_blank"
-                  class="project-github-link">GitHub
-                  Repository</a>
-                <a href="https://serene-syrniki-d8caf6.netlify.app" target="_blank"
-                  class="project-deployed-link">Live Demo</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="project-card">
-          <p class="title project-title">COOL CLOTHS</p>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front project-2">
-
-              </div>
-              <div class="flip-card-back">
-                <img src="" alt="">
-                <p class="project-description">This is E-Commerce Web and name is COOL-CLOTH which is clone of koovs.com
-                  which sell product like dresses, Footwears and accessories.</p>
-                <hr>
-                <p class="project-tech-stack">HTML CSS JAVASCRIPT</p>
-                <hr>
-                <a href="https://github.com/MSaifKhan01/deeply-time-4287" target="_blank"
-                  class="project-github-link">GitHub Repository</a>
-                <a href="https://bucolic-malasada-a43ddd.netlify.app/" target="_blank"
-                  class="project-deployed-link">Live
-                  Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class ="project-card">
-          <p class="title project-title">YOUR HELPER</p>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front project-3">
-
-              </div>
-              <div class="flip-card-back">
-                <img src="" alt="">
-                <p class="project-description">Objective of this system is to maintain and manage detailed information
-                  on
-                  the crime that happened in an area under a particular police station.</p>
-                <hr>
-                <p class="project-tech-stack">JAVA</p>
-                <hr>
-                <a href="https://github.com/Rupesh0913/deeply-oven-5153" target="_blank"
-                  class="project-github-link">GitHub Repository</a>
-                <a href="https://drive.google.com/file/d/16_emgxITXID3z8aFFQRd5jg5XE-Gi9-n/view" target="_blank"
-                  class="project-deployed-link">Presentation</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class ="project-card">
-          <p class="title project-title">The Sweet Spot</p>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front project-4">
-
-              </div>
-              <div class="flip-card-back">
-                <img src="" alt="">
-                <p class="project-description"> Objective of this system is to maintain and manage detailed information
-                  of
-                  all the products in the shop and also store the information of Customers</p>
-                <hr>
-                <p class="project-tech-stack">JAVA HIBERNATE MYSQL</p>
-                <hr>
-                <a href="https://github.com/Rupesh0913/teal-fuel-7913" target="_blank"
-                  class="project-github-link">GitHub
-                  Repository</a>
-                <a href="https://drive.google.com/file/d/1w2JnG8QVZVcJy9O-jqepi5ik9Mj0QFi1/view" target="_blank"
-                  class="project-deployed-link">Presentation</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    </div> -->
   </section>
 
   <h1 class="heading">Github Stats</h1>
@@ -566,9 +370,9 @@
     });
   </script>
 
-
+  <!-- git calendar -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script>
-    // git calendar
     GitHubCalendar(".react-activity-calendar", "Rupesh0913", {
       responsive: true,
       global_stats: false,
