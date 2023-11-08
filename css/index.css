@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* overflow: hidden; */
+
 }
 
 
@@ -23,10 +23,7 @@ body {
   justify-content: space-between;
 }
 
-header {
-  background-color: #161616;
 
-}
 
 .clip_path {
   background-color: #161616;
@@ -85,13 +82,10 @@ header {
   top: 0;
   z-index: 1000;
   background-color: #161616;
-  /* backdrop-filter: blur(70px); */
-  /* Adjust the blur amount as desired */
+ 
 }
 
 .Intro-img img {
-  /* width:250px; */
-  /* margin-bottom: 75px; */
   border-radius: 200px 200px 00px 00px;
 }
 
@@ -187,7 +181,7 @@ header {
  }
  #projects>img {
    height: auto;
-   max-width: 100%;
+   max-width: 90%;
    vertical-align: middle;
  }
  
@@ -352,7 +346,6 @@ header {
 }
 
 .ContributionCalendar-label {
-  /* color:#161616 !important; */
   font-weight: bold;
 }
 
@@ -372,11 +365,23 @@ text.ContributionCalendar-label {
   width: 35%;
   margin: auto;
   display: flex;
+  gap:1rem;
   flex-direction: column;
   margin-top: 30px;
 }
 
-/* git callender */
+/* git calender */
+#github-calendar{
+
+  display: flex;
+  margin-top: 2rem;
+  justify-content:center;
+  
+}
+#github-calendar img{
+  width: 63%; 
+  display: block;  
+}
 
 /* contact */
 #contact {
@@ -444,14 +449,17 @@ text.ContributionCalendar-label {
 
 
 /* media query */
-@media screen and (max-width:360px) {
+@media all and (max-width:360px) {
   
   .Intro h1 {
     font-size: 4rem;
   }
+  #github-calendar img{
+    width:100%;
+  }
 }
 
-@media screen and (max-width:500px){
+@media all and (max-width:500px){
   #nav-menu a{
     font-size: 0.9rem;
   }
@@ -474,6 +482,9 @@ text.ContributionCalendar-label {
 
   .Intro h1 span {
     font-size: 2.5rem;
+  }
+  #github-calendar img{
+    width:83%;
   }
 
 }
@@ -499,90 +510,10 @@ text.ContributionCalendar-label {
   .Intro h1 span {
     font-size: 3rem;
   }
+  #github-calendar img{
+    width:73%;
+  }
   
 }
 
 /* media query */
-
-
-
-/* General Styles */
-.flip-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  height: 475px;
-  perspective: 1000px;
-  margin: 20px;
-}
-
-.flip-card-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-image {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain; /* This ensures the image fits without overflowing */
-}
-
-
-/* Back Side Styles */
-/* .flip-card-back {
-  width: 100%;
-  height: 100%;
-  transform: rotateY(180deg);
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} 
-
-.flip-card-back h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.flip-card-back p {
-  font-size: 16px;
-  margin-bottom: 20px;
-} */
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-  .flip-card {
-    max-width: 100%; /* Full width on smaller screens */
-  }
-  .project-card-container {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .card-image {
-    max-height: 150px; /* Adjust the max-height of the image for mobile */
-  }
-  .flip-card-back p {
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-  .btn {
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-}
